@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Results:</h2>
+
+  <div *ngFor="let result of results" class="option-view">
+    <div class="label">{{ result.name}}: {{result.value}} <span>%</span></div>
+    <div class="scale">
+      <div class="filler" [style.width]="result.value + '%'"></div>
+    </div>
+  </div>
+
+</div>

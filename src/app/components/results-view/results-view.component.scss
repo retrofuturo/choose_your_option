@@ -1,0 +1,19 @@
+.scale {
+  position: relative;
+  width: 250px;
+  height: 9px;
+  border-radius: 7px;
+  box-shadow: inset 2px 3px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
+
+  .filler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    //background: linear-gradient(to right rgb(219, 57, 17) 65%, #000 65%);
+    //background-image: linear-gradient(to right, rgb(219, 57, 17) 56%, transparent 56%);
+    background: rgb(219, 57, 17);
+    border-radius: 7px;
+    height: 9px;
+  }
+}

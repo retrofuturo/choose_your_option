@@ -1,0 +1,24 @@
+
+
+<div class="container">
+  <h2>Choose your option:</h2>
+
+  <form #questionForm="ngForm" (ngSubmit)="onSubmit(questionForm)" (change)="onToggle()">
+
+      <div class="form-group">
+        <input type="checkbox" [(ngModel)]="holidayOptions.values[0].value" name="circus" id="circus"><label for="circus"> {{ holidayOptions.values[0].name }}</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" [(ngModel)]="holidayOptions.values[1].value" name="theatre" id="theatre"><label for="theatre"> {{ holidayOptions.values[1].name }}</label>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" [(ngModel)]="holidayOptions.values[2].value" name="zoo" id="zoo"><label for="zoo"> {{ holidayOptions.values[2].name }}</label>
+      </div>
+    <div class="form-group">
+      <input type="checkbox" [(ngModel)]="holidayOptions.none" name="none" id="none"><label for="none"> I don't care</label>
+    </div>
+
+    <button type="submit" [disabled]="questionForm.form.untouched">Submit</button>
+  </form>
+
+</div>
